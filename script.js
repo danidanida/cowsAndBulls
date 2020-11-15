@@ -54,6 +54,7 @@ for(var i =0; i<numToGuess.length; i++){
         outputResult.innerText = "Your cows amount = " + cows + "   " + "You guessed: " + outputArr
       } else outputArr[i] = outputArr[i]
     }
+    confirmBtn.disabled=true;
 
     if (cows >= 4) {
       outputResult.innerText = "You WON, you guessed: " + outputArr
@@ -67,6 +68,7 @@ else outputGuess.innerText = "Please enter four digits, from 1 to 9" // validati
 function initGame() { 
   if (mainInput.value != "")
     if (guessedDigits.length = 3) {
+      confirmBtn.disabled=false;
       guessedDigits = [];
       bulls = 0;
       outputGuess.innerText = ""

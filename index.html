@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cows and Bulls </title>
+</head>
+<body>
+    <div id = "rotate">
+        <br>
+        <br>
+        <br>
+        <br>
+            <h1><a href="#explanation" id="h1">Cows and Bulls *</a></h1>
+    </div>
+<div id = "centered">
+
+        <div id="game">
+    <h3>Try to guess</h3>
+    <input id = "mainInput" type="number" max="9999"> </input> <button id ="confirmBtn" class="btn btn-dark"> I am ready</button>
+    <h2 id = "outputGuess"></h2>
+    <button id="initBtn" class="btn btn-dark">New Round</button>
+    <h2 id= "numOftryOutput"></h2>
+    <h2 id = "outputResult"></h2> 
+    <h2 id = "outputResultBulls"></h2>
+</div>
+</div>
+
+<div id="explanation">
+<p>
+    Computer thinks of a 4-digit secret number. The digits will be all different. Then you try to guess digits. If the matching digits are in their right positions, they are "cows", if in different positions, they are "bulls". If you guess all the "cows", you winn. Be careful, you have limited amount of attempts:)
+</p>
+</div>
+    <script src="./randomArr.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
